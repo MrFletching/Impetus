@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Impetus {
 
 	class IMPETUS_API MouseMovedEvent : public Event

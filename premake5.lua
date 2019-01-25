@@ -18,6 +18,9 @@ project "Impetus"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "impch.h"
+	pchsource "Impetus/src/impch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

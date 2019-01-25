@@ -2,9 +2,6 @@
 
 #include "Impetus/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Impetus {
 
 	enum class EventType

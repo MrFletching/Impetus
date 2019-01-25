@@ -25,11 +25,16 @@
     <ClInclude Include="src\Impetus\Events\Event.h">
       <Filter>Impetus\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Impetus\Events\KeyEvent.h">
+      <Filter>Impetus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Impetus\Events\MouseEvent.h">
+      <Filter>Impetus\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Impetus\Log.h">
       <Filter>Impetus</Filter>
     </ClInclude>
-    <ClInclude Include="src\Impetus\Events\KeyEvent.h" />
-    <ClInclude Include="src\Impetus\Events\MouseEvent.h" />
+    <ClInclude Include="src\impch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Impetus\Application.cpp">
@@ -38,5 +43,6 @@
     <ClCompile Include="src\Impetus\Log.cpp">
       <Filter>Impetus</Filter>
     </ClCompile>
+    <ClCompile Include="src\impch.cpp" />
   </ItemGroup>
 </Project>

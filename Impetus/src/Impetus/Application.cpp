@@ -1,3 +1,4 @@
+#include "impch.h"
 #include "Application.h"
 
 #include "Impetus/Events/ApplicationEvent.h"
