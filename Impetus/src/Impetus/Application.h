@@ -4,7 +4,7 @@
 
 namespace Impetus {
 
-	class IM_API Application
+	class IMPETUS_API Application
 	{
 	public:
 		Application();
