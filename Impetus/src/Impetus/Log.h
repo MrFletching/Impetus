@@ -6,13 +6,13 @@
 
 namespace Impetus {
 
-	class IMPETUS_API Log
+	class Log
 	{
 	public:
-		static void Init();
+		IMPETUS_API static void Init();
 
-		inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
-		inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
+		IMPETUS_API inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
+		IMPETUS_API inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
 
 	private:
 		static std::shared_ptr<spdlog::logger> s_CoreLogger;
