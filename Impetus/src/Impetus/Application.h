@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "Window.h"
+#include "Impetus/Events/ApplicationEvent.h"
 
 namespace Impetus {
 
@@ -13,7 +14,11 @@ namespace Impetus {
 
 		void Run();
 
+		void OnEvent(Event& e);
+
 	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
 	};
