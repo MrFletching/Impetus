@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Impetus/Log.h"
+
 #ifdef IMPETUS_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

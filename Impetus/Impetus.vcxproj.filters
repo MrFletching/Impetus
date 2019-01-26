@@ -35,6 +35,8 @@
       <Filter>Impetus</Filter>
     </ClInclude>
     <ClInclude Include="src\impch.h" />
+    <ClInclude Include="src\Impetus\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Impetus\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Impetus</Filter>
     </ClCompile>
     <ClCompile Include="src\impch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

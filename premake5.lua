@@ -10,6 +10,12 @@ workspace "Impetus"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Impetus/vendor/GLFW/include"
+
+include "Impetus/vendor/GLFW"
+
 project "Impetus"
 	location "Impetus"
 	kind "SharedLib"
@@ -30,7 +36,14 @@ project "Impetus"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

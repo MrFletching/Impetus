@@ -1,3 +1,6 @@
 [submodule "Impetus/vendor/spdlog"]
 	path = Impetus/vendor/spdlog
 	url = git@github.com:gabime/spdlog.git
+[submodule "Impetus/vendor/GLFW"]
+	path = Impetus/vendor/GLFW
+	url = git@github.com:TheCherno/glfw.git
