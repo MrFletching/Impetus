@@ -7,6 +7,12 @@
     <Filter Include="Impetus\Events">
       <UniqueIdentifier>{1087EBC3-FC54-DFC9-E5E8-4FF0D155BB2E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Impetus.h" />
@@ -31,21 +37,39 @@
     <ClInclude Include="src\Impetus\Events\MouseEvent.h">
       <Filter>Impetus\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Impetus\Layer.h">
+      <Filter>Impetus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Impetus\LayerStack.h">
+      <Filter>Impetus</Filter>
+    </ClInclude>
     <ClInclude Include="src\Impetus\Log.h">
       <Filter>Impetus</Filter>
     </ClInclude>
+    <ClInclude Include="src\Impetus\Window.h">
+      <Filter>Impetus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\impch.h" />
-    <ClInclude Include="src\Impetus\Window.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Impetus\Application.cpp">
       <Filter>Impetus</Filter>
     </ClCompile>
+    <ClCompile Include="src\Impetus\Layer.cpp">
+      <Filter>Impetus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Impetus\LayerStack.cpp">
+      <Filter>Impetus</Filter>
+    </ClCompile>
     <ClCompile Include="src\Impetus\Log.cpp">
       <Filter>Impetus</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\impch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

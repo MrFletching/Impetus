@@ -43,6 +43,8 @@ namespace Impetus {
 			return GetCategoryFlags() & category;
 		}
 
+		inline bool IsHandled() { return m_Handled; }
+
 	protected:
 		bool m_Handled = false;
 	};
